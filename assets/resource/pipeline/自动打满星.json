@@ -1,26 +1,4 @@
 {
-    "自动打满星下一步1": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "下一步.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "自动打满星关闭"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 6035,
-                "y": 883
-            }
-        }
-    },
     "自动打满星": {
         "recognition": {
             "type": "TemplateMatch",
@@ -176,6 +154,7 @@
                 "green_mask": true
             }
         },
+        "pre_delay": 1500,
         "action": {
             "type": "Click",
             "param": {
@@ -193,8 +172,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5822,
-                "y": 567
+                "x": 5807,
+                "y": 565
             }
         }
     },
@@ -323,6 +302,28 @@
             "position": {
                 "x": 6782,
                 "y": 259
+            }
+        }
+    },
+    "自动打满星下一步1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "下一步.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "自动打满星关闭"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6035,
+                "y": 883
             }
         }
     }
