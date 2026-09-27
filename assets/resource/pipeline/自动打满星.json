@@ -1,0 +1,329 @@
+{
+    "自动打满星下一步1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "下一步.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "自动打满星关闭"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6035,
+                "y": 883
+            }
+        }
+    },
+    "自动打满星": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "10easy2.png",
+                    "10easy1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "检测2",
+            "检测1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7102,
+                "y": 294
+            }
+        }
+    },
+    "检测1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    730,
+                    517,
+                    545,
+                    92
+                ],
+                "template": [
+                    "满星.png"
+                ]
+            }
+        },
+        "next": [
+            "下一首"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7422,
+                "y": 421
+            }
+        }
+    },
+    "下一首": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "下一首.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "自动打满星"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7742,
+                "y": 333
+            }
+        }
+    },
+    "检测2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    730,
+                    518,
+                    544,
+                    86
+                ],
+                "template": [
+                    "黑星星.png",
+                    "绿星星.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "自动打满星打歌"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7422,
+                "y": 137
+            }
+        }
+    },
+    "自动打满星打歌": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "打歌确定.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "自动打满星开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4862,
+                "y": 559
+            }
+        }
+    },
+    "自动打满星开始": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "开始.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "自动打满星等"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5182,
+                "y": 581
+            }
+        }
+    },
+    "自动打满星完成": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "完成.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    968,
+                    498,
+                    289,
+                    208
+                ]
+            }
+        },
+        "next": [
+            "自动打满星关闭",
+            "自动打满星下一步1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5822,
+                "y": 567
+            }
+        }
+    },
+    "自动打满星下一步": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "下一步.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "自动打满星升级确定",
+            "自动打满星下一步",
+            "自动打满星再次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6462,
+                "y": 380
+            }
+        }
+    },
+    "自动打满星等": {
+        "timeout": -1,
+        "next": [
+            "自动打满星完成"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5502,
+                "y": 611
+            }
+        }
+    },
+    "自动打满星关闭": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "关闭.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "自动打满星关闭",
+            "自动打满星下一步"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6204,
+                "y": 569
+            }
+        }
+    },
+    "自动打满星再次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "再次.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "自动打满星"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6782,
+                "y": 590
+            }
+        }
+    },
+    "自动打满星故事解锁": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "关闭.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "自动打满星故事解锁",
+            "自动打满星升级确定",
+            "自动打满星下一步"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6142,
+                "y": 246
+            }
+        }
+    },
+    "自动打满星升级确定": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "确定.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "自动打满星故事解锁",
+            "自动打满星下一步"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6782,
+                "y": 259
+            }
+        }
+    }
+}

@@ -1,0 +1,602 @@
+{
+    "礼物盒": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "礼物盒.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "暂无可领取的礼物",
+            "礼物盒一键领取"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4550,
+                "y": 256
+            }
+        }
+    },
+    "任务": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "任务.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "任务一键领取"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3189,
+                "y": -156
+            }
+        }
+    },
+    "练习室": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "练习室.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "练习室一键领取"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 473,
+                "y": 2452
+            }
+        }
+    },
+    "礼物盒一键领取": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "一键领取.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "礼物确定领取1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4869,
+                "y": 224
+            }
+        }
+    },
+    "练习室一键领取": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "一键领取.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "练习室确定领取1",
+            "无奖励"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 793,
+                "y": 2468
+            }
+        }
+    },
+    "任务一键领取": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "一键领取.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "无任务奖励",
+            "任务确定领取"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3508,
+                "y": -156
+            }
+        }
+    },
+    "礼物关闭": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "关闭.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5827,
+                "y": 275
+            }
+        }
+    },
+    "暂无可领取的礼物": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "无礼物.png"
+                ]
+            }
+        },
+        "next": [
+            "礼物关闭"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5188,
+                "y": 535
+            }
+        }
+    },
+    "礼物确定领取1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "确定.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "礼物确定领取2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5188,
+                "y": 224
+            }
+        }
+    },
+    "礼物确定领取2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "确定.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "礼物关闭"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5507,
+                "y": 224
+            }
+        }
+    },
+    "练习室确定领取1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "确定.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "focus": "",
+        "next": [
+            "升级1",
+            "练习室确定领取1",
+            "奖励返回"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1113,
+                "y": 2176
+            }
+        }
+    },
+    "无奖励": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "无奖励领取.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "奖励返回"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1113,
+                "y": 2507
+            }
+        }
+    },
+    "奖励返回": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "返回.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1433,
+                "y": 2237
+            }
+        }
+    },
+    "升级1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "升级.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    29,
+                    19,
+                    -54,
+                    -41
+                ]
+            }
+        },
+        "next": [
+            "练习室确定领取1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 793,
+                "y": 2129
+            }
+        }
+    },
+    "无任务奖励": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "无任务奖励.png"
+                ]
+            }
+        },
+        "next": [
+            "任务关闭"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3828,
+                "y": 115
+            }
+        }
+    },
+    "任务关闭": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "关闭.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4147,
+                "y": -144
+            }
+        }
+    },
+    "任务确定领取": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "确定.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "focus": "",
+        "next": [
+            "任务关闭"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3828,
+                "y": -195
+            }
+        }
+    },
+    "通行证": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "通行证.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "通行证任务"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -4,
+                "y": 139
+            }
+        }
+    },
+    "通行证任务": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "通行证任务.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "通行证任务一键领取"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 337,
+                "y": 142
+            }
+        }
+    },
+    "通行证任务确定领取": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "确定.png"
+                ]
+            }
+        },
+        "pre_delay": 2000,
+        "action": {
+            "type": "Click"
+        },
+        "focus": "",
+        "next": [
+            "通行证任务关闭"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 975,
+                "y": 405
+            }
+        }
+    },
+    "通行证任务关闭": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "关闭.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "通行证奖励一键领取"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1294,
+                "y": 134
+            }
+        }
+    },
+    "无通行证任务奖励": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "无任务奖励.png"
+                ]
+            }
+        },
+        "next": [
+            "通行证任务关闭"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 975,
+                "y": 95
+            }
+        }
+    },
+    "通行证任务一键领取": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "任务一键领取.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    722,
+                    639,
+                    116,
+                    43
+                ]
+            }
+        },
+        "next": [
+            "无通行证任务奖励",
+            "通行证任务确定领取"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 656,
+                "y": 118
+            }
+        }
+    },
+    "通行证返回": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "返回.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2252,
+                "y": 143
+            }
+        }
+    },
+    "通行证奖励一键领取": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "一键领取.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "无通行证奖励",
+            "通行证奖励确定领取"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1614,
+                "y": 124
+            }
+        }
+    },
+    "通行证奖励确定领取": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "确定.png"
+                ]
+            }
+        },
+        "pre_delay": 2000,
+        "action": {
+            "type": "Click"
+        },
+        "focus": "",
+        "next": [
+            "通行证返回"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1933,
+                "y": 402
+            }
+        }
+    },
+    "无通行证奖励": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "无任务奖励.png"
+                ]
+            }
+        },
+        "next": [
+            "通行证返回"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1933,
+                "y": 92
+            }
+        }
+    }
+}

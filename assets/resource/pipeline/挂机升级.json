@@ -1,0 +1,185 @@
+{
+    "挂机升级": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "打歌确定.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2930,
+                "y": 231
+            }
+        }
+    },
+    "开始": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "开始.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "挂机等"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3250,
+                "y": 215
+            }
+        }
+    },
+    "完成": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "完成.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "pre_delay": 2000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    968,
+                    498,
+                    289,
+                    208
+                ]
+            }
+        },
+        "next": [
+            "下一步"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3890,
+                "y": 153
+            }
+        }
+    },
+    "下一步": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "下一步.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "升级确定",
+            "下一步",
+            "再次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2290,
+                "y": 76
+            }
+        }
+    },
+    "升级确定": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "确定.png"
+                ]
+            }
+        },
+        "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "故事解锁",
+            "下一步"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2610,
+                "y": -37
+            }
+        }
+    },
+    "故事解锁": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "关闭.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "故事解锁",
+            "升级确定",
+            "下一步"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1970,
+                "y": -54
+            }
+        }
+    },
+    "再次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "再次.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "挂机升级"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2610,
+                "y": 231
+            }
+        }
+    },
+    "挂机等": {
+        "timeout": -1,
+        "next": [
+            "完成"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3570,
+                "y": 245
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+{
+    "启动": {
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.bilibili.sirius.official"
+            }
+        },
+        "next": [
+            "等"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 430,
+                "y": 111
+            }
+        }
+    },
+    "登入": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "登入.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1558,
+                "y": 138
+            }
+        }
+    },
+    "等": {
+        "timeout": -1,
+        "next": [
+            "检测登入"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 681,
+                "y": 103
+            }
+        }
+    },
+    "检测登入": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "登入1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "on_error": [
+            "等"
+        ],
+        "next": [
+            "等2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 965,
+                "y": 107
+            }
+        }
+    },
+    "等2": {
+        "timeout": 5000,
+        "next": [
+            "登入"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1257,
+                "y": 128
+            }
+        }
+    }
+}
