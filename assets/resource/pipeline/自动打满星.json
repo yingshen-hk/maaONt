@@ -1,4 +1,23 @@
 {
+    "自动打满星故事解锁": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "关闭.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8893,
+                "y": 829
+            }
+        }
+    },
     "自动打满星": {
         "recognition": {
             "type": "TemplateMatch",
@@ -13,17 +32,17 @@
             "type": "Click"
         },
         "next": [
-            "检测2",
-            "检测1"
+            "检测1",
+            "检测2"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7102,
-                "y": 294
+                "x": 7097,
+                "y": 722
             }
         }
     },
-    "检测1": {
+    "检测2": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -43,8 +62,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7422,
-                "y": 421
+                "x": 7396,
+                "y": 715
             }
         }
     },
@@ -65,12 +84,12 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7742,
-                "y": 333
+                "x": 7668,
+                "y": 725
             }
         }
     },
-    "检测2": {
+    "检测1": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -90,16 +109,16 @@
             "type": "Click"
         },
         "next": [
-            "自动打满星打歌"
+            "自动打满星打歌确定"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7422,
-                "y": 137
+                "x": 7396,
+                "y": 1017
             }
         }
     },
-    "自动打满星打歌": {
+    "自动打满星打歌确定": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -116,8 +135,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4862,
-                "y": 559
+                "x": 7676,
+                "y": 1041
             }
         }
     },
@@ -139,8 +158,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5182,
-                "y": 581
+                "x": 7992,
+                "y": 1040
             }
         }
     },
@@ -154,7 +173,7 @@
                 "green_mask": true
             }
         },
-        "pre_delay": 1500,
+        "pre_delay": 1000,
         "action": {
             "type": "Click",
             "param": {
@@ -168,36 +187,15 @@
         },
         "next": [
             "自动打满星关闭",
-            "自动打满星下一步1"
+            "自动打满星下一步"
+        ],
+        "on_error": [
+            "自动打满星开始"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5807,
-                "y": 565
-            }
-        }
-    },
-    "自动打满星下一步": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "下一步.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "自动打满星升级确定",
-            "自动打满星下一步",
-            "自动打满星再次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 6462,
-                "y": 380
+                "x": 8563,
+                "y": 1027
             }
         }
     },
@@ -208,8 +206,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5502,
-                "y": 611
+                "x": 8286,
+                "y": 1066
             }
         }
     },
@@ -222,6 +220,7 @@
                 ]
             }
         },
+        "pre_delay": 800,
         "action": {
             "type": "Click"
         },
@@ -231,8 +230,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6204,
-                "y": 569
+                "x": 9236,
+                "y": 1071
             }
         }
     },
@@ -253,32 +252,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6782,
-                "y": 590
-            }
-        }
-    },
-    "自动打满星故事解锁": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "关闭.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "自动打满星故事解锁",
-            "自动打满星升级确定",
-            "自动打满星下一步"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 6142,
-                "y": 246
+                "x": 9245,
+                "y": 1357
             }
         }
     },
@@ -295,17 +270,17 @@
             "type": "Click"
         },
         "next": [
-            "自动打满星故事解锁",
+            "自动打满星升级确定",
             "自动打满星下一步"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6782,
-                "y": 259
+                "x": 9237,
+                "y": 816
             }
         }
     },
-    "自动打满星下一步1": {
+    "自动打满星下一步": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -318,12 +293,15 @@
             "type": "Click"
         },
         "next": [
-            "自动打满星关闭"
+            "自动打满星关闭",
+            "自动打满星升级确定",
+            "自动打满星下一步",
+            "自动打满星再次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6035,
-                "y": 883
+                "x": 8897,
+                "y": 1086
             }
         }
     }
